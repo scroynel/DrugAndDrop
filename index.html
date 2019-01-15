@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="drop-area">
+        <form class="my-form">
+            <p> 
+                Загрузите изображения с помощью диалога выбора файлов 
+                или перетащив нужные изображения в выделенную область
+            </p>
+            <input type="file" id="fileElem" multiple accept="image/jpeg,image/png,image/gif,image/jpg,application/pdf" onchange="handleFiles(this.files)">
+            <label class="button" for="fileElem">Выбрать изображение</label>
+        </form>
+        <progress id="progress-bar" max="100" value="0"></progress>
+        <div id="gallery"></div>
+    </div>
+
+
+
+    <script src="script/script.js"></script>
+</body>
+</html>
